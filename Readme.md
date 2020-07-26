@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Витька Угарченко](https://up.htmlacademy.ru/adaptive/20/user/799069).
-* Наставник: [Мария 🐱 Коршунова] (https://htmlacademy.ru/profile/masha_mk).
+* Наставник: [Мария Коршунова] (https://htmlacademy.ru/profile/masha_mk).
 
 ---
 
