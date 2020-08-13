@@ -1,11 +1,69 @@
-.pictures__header {
+.pictures__header-top {
   width: 100%;
-  height: 214px;
+  height: 158px;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-color: @main-blue-color;
 }
 
+.pictures__header-bottom {
+  height: 189px;
+  padding: 20px;
+}
+
 .pictures__wrapper {
-  outline: 5px solid #ef4b41;
+  padding: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .pictures__intro {
+    height: 538px;
+  }
+
+  .pictures__header-top {
+    height: 290px;
+  }
+
+  .pictures__header-bottom {
+    height: 248px;
+    padding: 0 60px;
+  }
+
+  .pictures__wrapper {
+    padding: 0 60px 59px 60px;
+    margin: 0 auto;
+  }
+
+  .pictures__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 480px 347px 347px;
+  }
+
+  .pictures__item--first {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .pictures__intro {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .pictures__wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  .pictures__list {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 267px;
+  }
+
+  .pictures__item--first {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
 }

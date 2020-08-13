@@ -8,3 +8,19 @@
   color: @main-white-color;
   text-decoration: none;
 }
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    width: 100%;
+  }
+
+  .site-list__link {
+    color: @main-black-color;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    max-width: 1200px;
+  }
+}

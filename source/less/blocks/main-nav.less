@@ -1,5 +1,30 @@
 .main-nav__list {
   background-color: @main-blue-color;
   list-style: none;
-  outline: 5px solid #f09bd1;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__wrapper {
+    margin: 0 auto;
+  }
+
+  .main-nav__list {
+    background-color: @main-white-color;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-inline-start: 0;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    max-width: 1200px;
+  }
 }
