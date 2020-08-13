@@ -8,21 +8,23 @@
   .main-nav__wrapper {
     margin: 0 auto;
   }
+
   .main-nav__list {
     background-color: @main-white-color;
     height: 56px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-inline-start: 0px;
+    padding-inline-start: 0;
   }
+
   .main-nav__toggle {
     display: none;
   }
 }
 
 @media (min-width: @desktop-width) {
-    .main-nav__wrapper {
-      max-width: 1200px;
+  .main-nav__wrapper {
+    max-width: 1200px;
   }
 }
