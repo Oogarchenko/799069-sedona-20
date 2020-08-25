@@ -1,13 +1,229 @@
 .recommendations__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   list-style: none;
   padding-inline-start: 0;
-  padding: 0 30px;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    min-height: 330px;
+    margin: 0;
+    gap: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    gap: 0;
+  }
 }
 
-@media (min-width: @tablet-width) {
-  .recommendations__list {
-    display: flex;
-    flex-direction: row;
-    height: 330px;
+.recommendations__item {
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 30px;
+  }
+}
+
+.recommendations__title {
+  font-size: 18px;
+  line-height: 26px;
+  margin-left: 50px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+
+
+  @media (min-width: @tablet-width) {
+    margin-top: 88px;
+    margin-left: 0;
+    text-align: center;
+    font-size: 21px;
+
+    &--place {
+      margin-top: 70px;
+      margin-bottom: 21px;
+    }
+
+    &--food {
+      margin-bottom: 24px;
+    }
+
+    &--souvenires {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--souvenires {
+      margin-right: 21px;
+      margin-bottom: 25px;
+    }
+
+    &--food {
+      margin-right: 37px;
+      margin-bottom: 25px;
+    }
+
+    &--place {
+      margin: 0;
+      margin-left: 17px;
+      margin-top: 52px;
+      margin-bottom: 23px;
+    }
+  }
+}
+
+.recommendations__description {
+  font-size: 14px;
+  line-height: 21px;
+  margin-left: 50px;
+  max-width: 229px;
+
+  @media (max-width: @mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+    text-align: center;
+    max-width: 193px;
+  }
+
+  &--souvenires {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 300px;
+
+    &--food {
+      margin-right: 38px;
+      margin-bottom: 1px;
+    }
+
+    &--souvenires {
+      margin-right: 26px;
+      margin-top: 10px;
+
+      br {
+        display: initial;
+      }
+    }
+
+    &--place {
+      margin-left: 10px;
+    }
+  }
+}
+
+.recommendations__item--place {
+  padding-top: 25px;
+
+  @media (min-width: @tablet-width) {
+    order: -1;
+    padding-top: 10px;
+    top: 15px;
+  }
+}
+
+.recommendations__icon--place {
+  position: absolute;
+  left: -1px;
+  top: 15px;
+  fill: @main-blue-color;
+
+  @media (min-width: @tablet-width) {
+    width: 75px;
+    height: 72px;
+    left: 58px;
+    top: -18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 74.7px;
+    height: 72.4px;
+    left: 125px;
+    top: -38px;
+  }
+}
+
+.recommendations__item--food {
+  padding-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    order: 0;
+    top: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -15px;
+  }
+}
+
+.recommendations__icon--food {
+  position: absolute;
+  left: -3px;
+  top: 9px;
+  fill: @main-blue-color;
+
+  @media (min-width: @tablet-width) {
+    width: 76px;
+    height: 67px;
+    top: 6px;
+    left: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 76.2px;
+    height: 68.9px;
+    left: 112px;
+    top: 12px;
+  }
+}
+
+.recommendations__item--souvenires {
+  padding-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    top: -7px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -4px;
+  }
+}
+
+.recommendations__icon--souvenires {
+  position: absolute;
+  left: 4px;
+  top: 2px;
+  fill: @main-blue-color;
+
+  @media (min-width: @tablet-width) {
+    width: 64px;
+    height: 75px;
+    top: 0;
+    left: 64px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 63px;
+    height: 75.02px;
+    top: 1px;
+    left: 75px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  br {
+    display: none;
   }
 }
