@@ -13,6 +13,11 @@
 
 .page-header__picture {
   height: 84px;
+
+  @media (min-width: @desktop-width) {
+    width: 186.6px;
+    height: 96.43px;
+  }
 }
 
 .page-header {
@@ -27,11 +32,6 @@
   height: 84px;
   width: 101.7px;
   text-align: center;
-
-  @media (min-width: @desktop-width) {
-    width: 186.6px;
-    height: 96.43px;
-  }
 }
 
 @media (min-width: @tablet-width) {
@@ -45,7 +45,8 @@
 
 @media (min-width: @desktop-width) {
   .page-header__logo {
-    height: 97px;
+    width: 186.6px;
+    height: 96.43px;
     order: 0;
     margin: 0 auto -97px auto;
   }

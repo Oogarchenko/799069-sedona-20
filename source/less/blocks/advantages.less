@@ -101,15 +101,31 @@
 }
 
 .advantages__photo {
-  height: 260px;
+  height: auto;
+  max-height: 260px;
   width: 100%;
+  max-width: 100%;
   margin-bottom: -7px;
 
   @media (min-width: @tablet-width) {
     height: 256px;
-    min-width: auto;
+    width: 100%;
+    max-width: 100%;
     padding: 0;
     margin: 0;
+
+    &--city {
+      margin-bottom: -7px;
+    }
+
+    &--bridge {
+      margin-bottom: -7px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -274,6 +290,6 @@
 
   .advantages__grey {
     justify-content: center;
-    gap: 10px;
+    gap: 2px;
   }
 }
