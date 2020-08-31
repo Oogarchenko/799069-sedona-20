@@ -1,13 +1,16 @@
 .advantages__item {
   text-align: center;
+  position: relative;
 
   &--blue {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: @main-white-color;
-    background-color: @main-blue-color;
     padding-top: 7px;
+    background: url("../img/bg-triangle.svg") no-repeat 50% -5%;
+    background-size: 768px 37px;
+    background-color: @main-blue-color;
 
 
     @media (min-width: @tablet-width) {
@@ -15,8 +18,10 @@
       flex-direction: row;
       min-height: 256px;
       padding: 0;
+      background-image: none;
     }
   }
+
 
   &--grey {
     display: flex;
@@ -124,8 +129,27 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 100%;
-    max-width: 100%;
+    &--bridge {
+      width: 800px;
+      max-width: 100%;
+      position: absolute;
+      height: 100%;
+      top: 50%;
+      left: 33.35%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+    }
+
+    &--city {
+      width: 800px;
+      max-width: 100%;
+      position: absolute;
+      height: 100%;
+      top: 50%;
+      left: 66.6%;
+      transform: translate(-49.9%, -50%);
+      object-fit: cover;
+    }
   }
 }
 
@@ -138,7 +162,7 @@
   &--grey {
     margin: 0;
     padding-bottom: 11px;
-    margin-top: 30px;
+    margin-top: 25px;
   }
 
   @media (max-width: @mobile-width-only) {
